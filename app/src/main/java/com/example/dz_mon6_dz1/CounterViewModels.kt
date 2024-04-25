@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 
 class CounterViewModel() : ViewModel() {
     private val _counter = MediatorLiveData<Int>()
-    val countre :LiveData<Int> get() = _counter
+    val counter :LiveData<Int> get() = _counter
     init {
         _counter.value = 0
     }

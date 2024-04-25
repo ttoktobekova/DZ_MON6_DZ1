@@ -16,7 +16,7 @@ class CounterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        viewModel.countre.observe(this) { count ->
+        viewModel.counter.observe(this) { count ->
             binding.tvCount.text = count.toString()
         }
         initClickers()
