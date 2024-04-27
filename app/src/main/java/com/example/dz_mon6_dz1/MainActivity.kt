@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.dz_mon6_dz1.databinding.ActivityMainBinding
 
 
-class CounterActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     private val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
@@ -24,11 +24,11 @@ class CounterActivity : AppCompatActivity() {
 
     private fun initClickers() {
         binding.btnInc.setOnClickListener {
-            viewModel.dec()
+            viewModel.inc()
         }
 
         binding.btnDec.setOnClickListener {
-            viewModel.inc()
+            viewModel.dec()
         }
     }
 }
